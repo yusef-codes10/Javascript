@@ -10,5 +10,10 @@
 }
 
 .card {
-    position: fixed;  /* Must be fixed, to be draggable  */
+    position: fixed;  /* Must be fixed, key to position the card wherever we want */
+    width: 400px;
+    height: 400px;
+    background-color: #AFDA9F;
+    border-radius: 5px;
+    cursor: pointer;
 }
