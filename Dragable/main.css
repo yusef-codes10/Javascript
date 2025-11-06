@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    background-color: #212228;
+    height: 100vh;
+}
+
+.card {
+    position: fixed;  /* Must be fixed, to be draggable  */
+}
