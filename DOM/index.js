@@ -1,37 +1,45 @@
-// // I- Add an element to the page
-// // There are two ways to add elements to the page
-// // 1- select the element you want to change, or to append elements to, speaking of append
-// // append vs appendChild, with appendchild you can only append elements such as div, and other tags
-// // with append you can append all of those with string any pretty much anything
-// const body = document.body;
-// body.append(`Hello`);
+// // // I- Add an element to the page
+// // // There are two ways to add elements to the page
+// // // 1- select the element you want to change, or to append elements to, speaking of append
+// // // append vs appendChild, with appendchild you can only append elements such as div, and other tags
+// // // with append you can append all of those with string any pretty much anything
+// // const body = document.body;
+// // body.append(`Hello`);
 
-// // ! II- Create an element and then you have to add it
-// const div = document.createElement('div');
-// body.append(div);
+// // // ! II- Create an element and then you have to add it
+// // const div = document.createElement('div');
+// // body.append(div);
 
-// // ! there are two way to add a text to a div
-// div.innerText = "This is a DOM manipulation"
-// div.textContent = "This is a DOM manipulation 2"
-
-
-// ! DOM Manipulation
+// // // ! there are two way to add a text to a div
+// // div.innerText = "This is a DOM manipulation"
+// // div.textContent = "This is a DOM manipulation 2"
 
 
-// ! getElementById()
-const title = document.getElementById('main-heading')
-console.log(title.textContent)
+// // ! DOM Manipulation
 
-// ! getElementByClassName()
-const list = document.getElementsByClassName('list-items');
-console.log(list)
 
-// ! getElementByTagName()
-const listItems = document.getElementsByTagName('li');
-console.log(listItems)
+// // ! getElementById()
+// const title = document.getElementById('main-heading')
+// console.log(title.textContent)
 
-// ! querySelector() | One item
-const container = document.querySelector('div')
-console.log(container)
+// // ! getElementByClassName()
+// const list = document.getElementsByClassName('list-items');
+// console.log(list)
 
-// ! querySelectorAll()
+// // ! getElementByTagName()
+// const listItems = document.getElementsByTagName('li');
+// console.log(listItems)
+
+// // ! querySelector() | One item
+// const container = document.querySelector('div')
+// console.log(container)
+
+// // ! querySelectorAll()
+
+// ! 2- Styling an element
+const title = document.querySelector('#main-heading');
+title.style.color = 'red';
+title.style.display = 'block';
+title.style.fontSize = '3rem';
+
+console.log(title);

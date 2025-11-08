@@ -15,9 +15,7 @@ These methods allow you to access and manipulate HTML elements for dynamic chang
 
 ### 💡 The HTML & CSS Setup
 
-> 🖼️ *Insert image here showing your rendered webpage (screenshot placeholder)*
-> `![Favorite Movies Franchise Screenshot](./assets/dom-manipulation.png)`
-> *(Example image: the “Favorite Movies Franchise” list)*
+
 
 HTML contains a list of movie franchises and a heading, styled using CSS for better presentation.
 However, the focus here is purely on **JavaScript DOM selection methods**.
