@@ -43,3 +43,8 @@ title.style.display = 'block';
 title.style.fontSize = '3rem';
 
 console.log(title);
+
+// ! Inline CSS won't work with multiple items
+const listItems = document.querySelectorAll('.list-items');
+listItems.style.color = 'red';
+console.log(listItems);
