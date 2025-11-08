@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style-type: none;
+}
+.container {
+    border: 2px solid whitesmoke;
+    width: 600px;
+    margin: 100px auto;
+    padding: 12px 16px;
+}
+
+.main-heading {
+    text-align: center;
+    padding: 12px;
+}
+
+
+li {
+    color: hsla(240, 82%, 46%, 0.717);
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 5px;
+}
