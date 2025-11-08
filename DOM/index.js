@@ -46,5 +46,7 @@ console.log(title);
 
 // ! Inline CSS won't work with multiple items
 const listItems = document.querySelectorAll('.list-items');
-listItems.style.color = 'red';
+for (let i = 0; i < listItems.length; i++) {
+    listItems[i].style.color = 'red';
+}
 console.log(listItems);
