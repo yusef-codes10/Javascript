@@ -19,11 +19,19 @@
 
 
 // ! getElementById()
+const title = document.getElementById('main-heading')
+console.log(title.textContent)
 
 // ! getElementByClassName()
+const list = document.getElementsByClassName('list-items');
+console.log(list)
 
 // ! getElementByTagName()
+const listItems = document.getElementsByTagName('li');
+console.log(listItems)
 
-// ! querySelector()
+// ! querySelector() | One item
+const container = document.querySelector('div')
+console.log(container)
 
 // ! querySelectorAll()
