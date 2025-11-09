@@ -1,7 +1,7 @@
 const add = document.getElementById("btn");
 const list = document.querySelector("ul");
 const todo = document.getElementById("text");
-const remove = document.getElementById('rm');
+const remove = document.getElementById("rm");
 
 console.log(add);
 console.log(list);
@@ -24,28 +24,34 @@ console.log(list);
 // add function
 add.onclick = () => {
   // we are going to create the list items here
-  // ! 1- create the div
-  const newItem = document.createElement("div");
 
-  // append
-  list.append(newItem);
+  if (todo.value === " ") {
+    window.alert("You have to write something!");
+  } else {
+    // ! 1- create the div
+    const newItem = document.createElement("div");
 
-  // ! 2- create the heaing
-  const heading = document.createElement('h2');
-  // append to the div 
-  newItem.append(heading);
-  heading.textContent = todo.value;
+    // append
+    list.append(newItem);
 
-  // ! 3- create the remove button
-  const removeBtn = document.createElement('button');
-  newItem.append(removeBtn);
-  removeBtn.textContent = 'remove';
+    // ! 2- create the heaing
+    const heading = document.createElement("h2");
+    // append to the div
+    newItem.append(heading);
+    heading.textContent = todo.value;
 
-  removeBtn.onclick = () => {
-    newItem.remove();
-    console.log('remove btn has been clicked');
+    // ! 3- create the remove button
+    const removeBtn = document.createElement("button");
+    newItem.append(removeBtn);
+    removeBtn.textContent = "remove";
+
+    removeBtn.onclick = () => {
+      newItem.remove();
+      console.log("remove btn has been clicked");
+    };
+
+    if (todo.value !== " ") {
+      todo.value = " ";
+    }
   }
-}
-
-
-
+};
