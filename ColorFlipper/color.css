@@ -62,6 +62,8 @@ main button {
     width: 600px;
     background-color: red;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
 }
 
 .color {
