@@ -25,7 +25,7 @@ console.log(list);
 add.onclick = () => {
   // we are going to create the list items here
 
-  if (todo.value === " ") {
+  if (todo.value.trim() === "") {
     window.alert("You have to write something!");
   } else {
     // ! 1- create the div
