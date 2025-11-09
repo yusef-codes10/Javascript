@@ -8,7 +8,7 @@
 
 body {
     height: 100vh;
-    background-color: seagreen;
+    background-color: skyblue;
     display: flex;
     flex-direction: column;
 }
@@ -19,4 +19,29 @@ nav {
     justify-content: space-around;
     padding: 12px 16px;
     box-shadow: 8px 8px 12px black;
+}
+
+main {
+    background-color: skyblue;
+    height: 200px;
+    width: 400px;
+    margin: 4rem auto;
+}
+
+main .color-label {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main button {
+    margin: 24px 35%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
 }
