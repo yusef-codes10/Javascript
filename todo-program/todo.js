@@ -1,6 +1,6 @@
 const add = document.getElementById('btn');
 const list = document.querySelector('ul');
-const text = document.getElementById('text');
+const todo = document.getElementById('text');
 
 console.log(add);
 console.log(list);
@@ -13,5 +13,5 @@ add.onclick = function add() {
     // append
     list.append(newItem);
     // modify text content
-    console.log('button has been clicked');
+    newItem.textContent = todo.value;
 }
