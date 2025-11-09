@@ -22,7 +22,7 @@ console.log(list);
 
 // ! 2nd part
 // add function
-add.onclick = function add() {
+add.onclick = () => {
   // we are going to create the list items here
   // ! 1- create the div
   const newItem = document.createElement("div");
