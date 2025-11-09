@@ -56,3 +56,20 @@ main button {
     cursor: pointer;
     text-align: center;
 }
+
+.color-pallete {
+    height: 200px;
+    width: 600px;
+    background-color: red;
+    display: grid;
+}
+
+.color {
+    width: 200px;
+    height: 100px;
+    background-color: seagreen;
+}
+
+.hidden {
+    display: none;
+}
