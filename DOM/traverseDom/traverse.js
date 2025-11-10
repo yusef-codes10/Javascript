@@ -16,3 +16,8 @@ ul.childNodes[1].style.backgroundColor = "blue";
 
 
 // Siblings traversal
+console.log(ul.previousSibling);
+console.log(ul.nextSibling);
+console.log(ul.previousElementSibling);
+console.log(ul.nextElementSibling);
+
