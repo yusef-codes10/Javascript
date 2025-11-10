@@ -58,20 +58,27 @@ main button {
 }
 
 .color-pallete {
-    height: 200px;
-    width: 600px;
-    background-color: red;
+    height: 220px;
+    width: 620px;
+    background-color: #ffffff;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2px;
+    border-radius: 1rem;
+    padding: 12px;
 }
 
 .color {
-    width: 200px;
-    height: 100px;
     background-color: seagreen;
 }
 
-.hidden {
+.red {background-color: red;}
+.blue {background-color: blue;}
+.yellow {background-color: yellow;}
+.green {background-color: green;}
+.orange {background-color: orange;}
+.purple {background-color:purple ;}
+ 
+.hidden { 
     display: none;
 }
