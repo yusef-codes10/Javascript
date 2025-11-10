@@ -11,6 +11,7 @@ body {
     background-color: skyblue;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 nav {
@@ -70,10 +71,14 @@ main button {
     gap: 2px;
     border-radius: 1rem;
     padding: 12px;
+    position: absolute;
+    top: 248px;
+    left: 400px;
 }
 
 .color {
     background-color: seagreen;
+    cursor: pointer;
 }
 
 .red {background-color: red; grid-area: redArea;}
