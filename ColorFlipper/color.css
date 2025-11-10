@@ -63,6 +63,10 @@ main button {
     background-color: #ffffff;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "redArea blueArea yellowArea"
+    "greenArea orangeArea purpleArea";
+
     gap: 2px;
     border-radius: 1rem;
     padding: 12px;
@@ -72,12 +76,12 @@ main button {
     background-color: seagreen;
 }
 
-.red {background-color: red;}
-.blue {background-color: blue;}
-.yellow {background-color: yellow;}
-.green {background-color: green;}
-.orange {background-color: orange;}
-.purple {background-color:purple ;}
+.red {background-color: red; grid-area: redArea;}
+.blue {background-color: blue; grid-area: blueArea;}
+.yellow {background-color: yellow; grid-area: yellowArea;}
+.green {background-color: green; grid-area: greenArea;}
+.orange {background-color: orange; grid-area: orangeArea;}
+.purple {background-color:purple ; grid-area: purpleArea;}
  
 .hidden { 
     display: none;
