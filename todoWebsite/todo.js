@@ -23,6 +23,11 @@ btn.onclick = () => {
     removeBtn.classList.add('btn');
     newItem.append(removeBtn);
 
+    // check functionality
+    btnNew.onclick = () => {
+        todoText.style.textDecoration = 'line-through';
+    }
+    
     // remove functionality
     removeBtn.onclick = () => {
         newItem.remove();
