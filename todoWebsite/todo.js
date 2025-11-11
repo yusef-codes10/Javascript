@@ -23,6 +23,11 @@ btn.onclick = () => {
     removeBtn.classList.add('btn');
     newItem.append(removeBtn);
 
+    // remove functionality
+    removeBtn.onclick = () => {
+        newItem.remove();
+    }
+
     list.append(newItem);
     console.log('div has been created');
 
