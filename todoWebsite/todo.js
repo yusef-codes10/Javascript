@@ -7,7 +7,7 @@ btn.onclick = () => {
     // console.log('btn has been clicked');
     const newItem = document.createElement('div');
     const btnNew = document.createElement('button');
-    btnNew.classList.add('button');
+    btnNew.classList.add('btn');
     newItem.append(btnNew);
 
     list.append(newItem);
