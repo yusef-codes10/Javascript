@@ -18,6 +18,11 @@ btn.onclick = () => {
     todoText.textContent = 'You have to do it';
     newItem.append(todoText);
 
+    // remove icon
+    const removeBtn = document.createElement('button');
+    removeBtn.classList.add('btn');
+    newItem.append(removeBtn);
+
     list.append(newItem);
     console.log('div has been created');
 
