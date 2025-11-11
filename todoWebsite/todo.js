@@ -21,6 +21,10 @@ btn.onclick = () => {
   removeBtn.classList.add("btn");
   newItem.append(removeBtn);
 
+  // check icon
+  const checkIcon = document.createElement('li');
+  checkIcon.className = 'bi bi-check';
+  btnNew.appendChild(checkIcon);
   // check functionality
   btnNew.onclick = () => {
     if (todoText.style.textDecoration === "line-through") {
