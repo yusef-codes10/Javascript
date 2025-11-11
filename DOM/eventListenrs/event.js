@@ -6,9 +6,6 @@
 
 //! element.addEventListener("click", function)
 const btn = document.querySelector('.btn-2');
-// a callback function
-function aletBtn() {
-    alert('I hate JavaScript');
-}
 
-btn.addEventListener('mousedown', aletBtn);
+
+btn.addEventListener('click', () => alert('I hate JavaScript')); 
