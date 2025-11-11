@@ -53,3 +53,8 @@ main {
     display: flex;
     gap: 2px;
 }
+
+ul {
+    max-height: 400px;
+    overflow-y: scroll;
+}

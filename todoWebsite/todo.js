@@ -40,3 +40,10 @@ btn.onclick = () => {
 
 
 }
+
+
+// todo check btn | rename, add toggle functionality
+// todo add icons for the buttons
+// todo add a text input to add your plan
+// todo style the website
+// todo add overflow function
