@@ -47,3 +47,9 @@ main {
     /* justify-self: flex-end; */
     
 }
+
+/* class for the div created in js */
+.div {
+    display: flex;
+    gap: 2px;
+}
