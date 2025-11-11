@@ -30,6 +30,10 @@ btn.onclick = () => {
     }
   };
 
+  // create the icon 
+  const trashIcon = document.createElement('i');
+  trashIcon.className = 'bi bi-trash-fill';
+  removeBtn.appendChild(trashIcon);
   // remove functionality
   removeBtn.onclick = () => {
     newItem.remove();
