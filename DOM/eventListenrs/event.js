@@ -14,3 +14,4 @@ btn.addEventListener('click', () => alert('I hate JavaScript'));
 // Mouseover event
 const box3 = document.querySelector('.box3');
 box3.addEventListener('mouseover', () => box3.style.backgroundColor = 'red');
+box3.addEventListener('mouseout', () => box3.style.backgroundColor = '') ;
