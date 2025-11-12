@@ -51,7 +51,7 @@ function mainFunc() {
 
   list.append(newItem);
   console.log("div has been created");
-  addContainer.classList.remove("hidden");
+  addContainer.classList.add("hidden");
 }
 
 // create a function for that
