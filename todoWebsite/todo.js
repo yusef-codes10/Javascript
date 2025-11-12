@@ -47,7 +47,11 @@ function mainFunc() {
 
   list.append(newItem);
   console.log("div has been created");
+  inputTask.value = '';
   addContainer.classList.add("hidden");
 }
 
+
+// todo don't let empty strings
+// todo style the page
 
