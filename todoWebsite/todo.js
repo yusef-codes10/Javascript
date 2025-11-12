@@ -1,5 +1,6 @@
 const list = document.querySelector("ul");
 const btn = document.getElementById("btn");
+const inputTask = document.createElement("input");
 
 btn.addEventListener("click", mainFunc);
 btn.addEventListener("click", createToDo);
@@ -19,7 +20,7 @@ function mainFunc() {
   // newItem.append(inputDiv);
   // the text
   const todoText = document.createElement("p");
-  todoText.textContent = "You have to do it";
+  todoText.textContent = getUserInput();
   newItem.append(todoText);
 
   // remove icon
@@ -70,13 +71,21 @@ function createToDo() {
   container.append(addWindow);
 
   // create the input inside
-  const inputTask = document.createElement('input');
-  inputTask.classList.add('input-field');
+  inputTask.type = "text";
+  inputTask.classList.add("input-field");
   addWindow.append(inputTask);
 
   // create the button inside
-  const addBtn = document.createElement('button');
-  addBtn.classList.add('btn');
-  addBtn.textContent = 'Add';
+  const addBtn = document.createElement("button");
+  addBtn.classList.add("btn");
+  addBtn.textContent = "Add";
   addWindow.append(addBtn);
+
+  // get user input
+  addBtn.addEventListener("click", getUserInput);
+}
+
+function getUserInput() {
+  // return inputTask.value.trim();
+  return inputTask.value.trim();
 }
