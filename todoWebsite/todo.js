@@ -5,7 +5,7 @@ const addContainer = document.querySelector(".add-container");
 const addBtn = document.getElementById("addBtn");
 
 addBtn.addEventListener("click", mainFunc);
-btn.addEventListener("click", createToDo);
+btn.addEventListener("click", () => addContainer.classList.toggle("hidden"));
 // btn.addEventListener("click", createToDo);
 function mainFunc() {
   // if (getUserInput() !== "") {
@@ -33,7 +33,9 @@ function mainFunc() {
   btnNew.appendChild(checkIcon);
   // check functionality
   btnNew.onclick =
-   () => todoText.style.textDecoration === "line-through" ? todoText.style.textDecoration = "none" :  todoText.style.textDecoration = "line-through";
+   () => todoText.style.textDecoration === "line-through"
+       ? todoText.style.textDecoration = "none"
+       : todoText.style.textDecoration = "line-through";
 
 
   // create the icon
@@ -48,8 +50,4 @@ function mainFunc() {
   addContainer.classList.add("hidden");
 }
 
-// create a function for that
-function createToDo() {
-  // remove the hidden class
-  addContainer.classList.toggle("hidden");
-}
+
