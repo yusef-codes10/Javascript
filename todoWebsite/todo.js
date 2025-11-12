@@ -32,22 +32,16 @@ function mainFunc() {
   checkIcon.className = "bi bi-check";
   btnNew.appendChild(checkIcon);
   // check functionality
-  btnNew.onclick = () => {
-    if (todoText.style.textDecoration === "line-through") {
-      todoText.style.textDecoration = "none";
-    } else {
-      todoText.style.textDecoration = "line-through";
-    }
-  };
+  btnNew.onclick =
+   () => todoText.style.textDecoration === "line-through" ? todoText.style.textDecoration = "none" :  todoText.style.textDecoration = "line-through";
+
 
   // create the icon
   const trashIcon = document.createElement("i");
   trashIcon.className = "bi bi-trash-fill";
   removeBtn.appendChild(trashIcon);
   // remove functionality
-  removeBtn.onclick = () => {
-    newItem.remove();
-  };
+  removeBtn.addEventListener("click", () => newItem.remove());
 
   list.append(newItem);
   console.log("div has been created");
@@ -59,4 +53,3 @@ function createToDo() {
   // remove the hidden class
   addContainer.classList.toggle("hidden");
 }
-
