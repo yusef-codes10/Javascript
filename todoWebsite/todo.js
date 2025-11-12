@@ -1,9 +1,9 @@
 const list = document.querySelector("ul");
 const btn = document.getElementById("btn");
 
-btn.addEventListener('click', mainFunc);
-btn.addEventListener('click', createToDo);
-function mainFunc () {
+btn.addEventListener("click", mainFunc);
+btn.addEventListener("click", createToDo);
+function mainFunc() {
   // console.log('btn has been clicked');
   const newItem = document.createElement("div");
   newItem.classList.add("div");
@@ -28,8 +28,8 @@ function mainFunc () {
   newItem.append(removeBtn);
 
   // check icon
-  const checkIcon = document.createElement('li');
-  checkIcon.className = 'bi bi-check';
+  const checkIcon = document.createElement("li");
+  checkIcon.className = "bi bi-check";
   btnNew.appendChild(checkIcon);
   // check functionality
   btnNew.onclick = () => {
@@ -40,9 +40,9 @@ function mainFunc () {
     }
   };
 
-  // create the icon 
-  const trashIcon = document.createElement('i');
-  trashIcon.className = 'bi bi-trash-fill';
+  // create the icon
+  const trashIcon = document.createElement("i");
+  trashIcon.className = "bi bi-trash-fill";
   removeBtn.appendChild(trashIcon);
   // remove functionality
   removeBtn.onclick = () => {
@@ -51,7 +51,7 @@ function mainFunc () {
 
   list.append(newItem);
   console.log("div has been created");
-};
+}
 
 // todo check btn | rename, add toggle functionality
 // todo add icons for the buttons
@@ -59,10 +59,13 @@ function mainFunc () {
 // todo style the website
 // todo add overflow function
 
-
-// create a function for that 
-const container = document.querySelector('.to-do-container');
+// create a function for that
 function createToDo() {
-  console.log('it has been created');
-}
+  console.log("it has been created");
+  const container = document.querySelector(".to-do-container");
 
+  // create a new container
+  const addWindow = document.createElement("div");
+  addWindow.classList.add("add-container");
+  container.append(addWindow);
+}
