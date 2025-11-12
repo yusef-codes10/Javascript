@@ -85,10 +85,9 @@ ul {
 }
 
 .add-container {
-    width: 400px;
-    height: 200px;
-    background-color: seagreen;
+    background-color: transparent;
     position: absolute;
+    padding: 12px 16px;
 }
 
 input {
