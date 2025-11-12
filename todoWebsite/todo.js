@@ -68,4 +68,15 @@ function createToDo() {
   const addWindow = document.createElement("div");
   addWindow.classList.add("add-container");
   container.append(addWindow);
+
+  // create the input inside
+  const inputTask = document.createElement('input');
+  inputTask.classList.add('input-field');
+  addWindow.append(inputTask);
+
+  // create the button inside
+  const addBtn = document.createElement('button');
+  addBtn.classList.add('btn');
+  addBtn.textContent = 'Add';
+  addWindow.append(addBtn);
 }

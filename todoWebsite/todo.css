@@ -85,7 +85,14 @@ ul {
 }
 
 .add-container {
-    width: 200px;
+    width: 400px;
     height: 200px;
     background-color: seagreen;
+    position: absolute;
+}
+
+.input-field {
+    border: none;
+    border-radius: 1rem;
+    padding: 12px 16px;
 }
