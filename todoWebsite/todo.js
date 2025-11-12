@@ -4,7 +4,6 @@ const btn = document.getElementById("btn");
 btn.onclick = () => {
   // console.log('btn has been clicked');
   const newItem = document.createElement("div");
-  newItem.style.backgroundColor = "red";
   newItem.classList.add("div");
 
   const btnNew = document.createElement("button");
