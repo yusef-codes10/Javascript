@@ -1,7 +1,9 @@
 const list = document.querySelector("ul");
 const btn = document.getElementById("btn");
 
-btn.onclick = () => {
+btn.addEventListener('click', mainFunc);
+btn.addEventListener('click', createToDo);
+function mainFunc () {
   // console.log('btn has been clicked');
   const newItem = document.createElement("div");
   newItem.classList.add("div");
@@ -10,6 +12,11 @@ btn.onclick = () => {
   btnNew.classList.add("btn");
   newItem.append(btnNew);
 
+  // // create a new input
+  // const inputDiv = document.createElement('div');
+  // inputDiv.classList.add('div');
+  // inputDiv.style.backgroundColor = 'red';
+  // newItem.append(inputDiv);
   // the text
   const todoText = document.createElement("p");
   todoText.textContent = "You have to do it";
@@ -51,3 +58,11 @@ btn.onclick = () => {
 // todo add a text input to add your plan
 // todo style the website
 // todo add overflow function
+
+
+// create a function for that 
+const container = document.querySelector('.to-do-container');
+function createToDo() {
+  console.log('it has been created');
+}
+
