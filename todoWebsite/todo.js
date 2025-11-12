@@ -3,9 +3,9 @@ const btn = document.getElementById("btn");
 const inputTask = document.createElement("input");
 
 btn.addEventListener("click", mainFunc);
-btn.addEventListener("click", createToDo);
+// btn.addEventListener("click", createToDo);
 function mainFunc() {
-  if (getUserInput() !== "") {
+  // if (getUserInput() !== "") {
     // console.log('btn has been clicked');
     const newItem = document.createElement("div");
     newItem.classList.add("div");
@@ -53,7 +53,7 @@ function mainFunc() {
 
     list.append(newItem);
     console.log("div has been created");
-  }
+  
 }
 
 // todo check btn | rename, add toggle functionality
