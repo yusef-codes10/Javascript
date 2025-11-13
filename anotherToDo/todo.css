@@ -27,7 +27,7 @@
 .prority {
     display: flex;
     gap: 8px;
-    margin: 0 auto;
+    margin: 0.25rem auto;
 
 }
 
@@ -79,4 +79,12 @@
     align-items: center;
     margin: 1rem 0;
     gap: 1rem;
+}
+
+.new-item {
+    max-width: 300px;
+    background-color: seagreen;
+    text-align: center;
+    font-size: 1rem;
+    
 }
