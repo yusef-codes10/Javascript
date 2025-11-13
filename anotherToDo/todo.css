@@ -4,3 +4,22 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
 }
+
+.container {
+    background-color: #8474df;
+
+}
+
+.header {
+    background-color: #eec0e4;
+    border-bottom: 1px solid black;
+    padding: 12px 16px;
+    color: #8474df;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.task-container {
+    background-color: #705ed6;
+}
