@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/anotherToDo/todo.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/anotherToDo/todo.css" />
     <title>TO DO</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <p>TO-DO List</p>
-        </div>
-        <div class="status">
-            <p>Total: <span>0</span> |</p>
-            <p>Pending: <span>0</span> |</p>
-            <p>Completed: <span>0</span></p>
-        </div>
-        <div class="input-field">
-            <input type="text" name="text" id="text">
-        </div>
-        <div class="prority"></div>
-        <div class="add-task"></div>
-        <div class="task-container"></div>
-        <div class="actions-btn"></div>
+      <div class="header">
+        <p>TO-DO List</p>
+      </div>
+      <div class="status">
+        <p>Total: <span>0</span> |</p>
+        <p>Pending: <span>0</span> |</p>
+        <p>Completed: <span>0</span></p>
+      </div>
+      <div class="input-field">
+        <input type="text" name="text" id="text" />
+      </div>
+      <div class="prority">
+        <p>Priority:</p>
+        <label for="high">High</label>
+        <input type="radio" name="priority" id="high" />
+        <label for="medium">Medium</label>
+        <input type="radio" name="priority" id="medium" />
+        <label for="low">Low</label>
+        <input type="radio" name="priority" id="low" />
+      </div>
+      <div class="add-task"></div>
+      <div class="task-container"></div>
+      <div class="actions-btn"></div>
     </div>
-    
-
 
     <script src="/anotherToDo/todo.js"></script>
-</body>
+  </body>
 </html>
