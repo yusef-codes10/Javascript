@@ -20,6 +20,11 @@
     font-size: 1.5rem;
 }
 
+.status {
+    display: flex;
+    gap: 8px;
+}
+
 .task-container {
     background-color: #705ed6;
 }
