@@ -59,6 +59,12 @@ newQuote.addEventListener("click", () => console.log("btn has been clicked"));
 newQuote.addEventListener("click", changeQuote);
 
 function changeQuote() {
-  quote.textContent = quotes[counter].quote;
-  counter++;
+  if (counter < 10) {
+    quote.textContent = quotes[counter].quote;
+    person.textContent = quotes[counter].person;
+    counter++;
+  } else {
+    counter = 0;
+  }
+  console.log(counter);
 }
