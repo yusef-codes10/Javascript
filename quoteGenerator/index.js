@@ -69,3 +69,8 @@ function changeQuote() {
   }
   console.log(counter);
 }
+
+// ! key lesson 
+// ➡️ Never put elements inside another element if you're going to replace its entire content with textContent or innerHTML.
+
+// Because you’ll delete them.
