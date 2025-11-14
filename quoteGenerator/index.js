@@ -56,13 +56,12 @@ const quotes = [
 let counter = 0;
 
 newQuote.addEventListener("click", () => console.log("btn has been clicked"));
-newQuote.addEventListener("click", changeQuote);
+newQuote.addEventListener("click", randomQuote);
 
 function changeQuote() {
   if (counter < 10) {
-    let a = quote.textContent = quotes[counter].quote;
-    let b = person.innerHTML = quotes[counter].person;
-    console.log(b);
+    quote.textContent = quotes[counter].quote;
+    person.innerHTML = quotes[counter].person;
     counter++;
   } else {
     counter = 0;
@@ -74,3 +73,10 @@ function changeQuote() {
 // ➡️ Never put elements inside another element if you're going to replace its entire content with textContent or innerHTML.
 
 // Because you’ll delete them.
+
+function randomQuote() {
+    let random = Math.floor(Math.random() * quotes.length);
+    quote.innerText = quotes[random].quote;
+    person.innerText = quotes[random].person;
+
+}
