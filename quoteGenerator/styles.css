@@ -44,6 +44,7 @@
 .person {
     font-size: 1.4rem;
     color: goldenrod;
+    text-align: center;
 }
 .btn {
     margin: 0 auto;

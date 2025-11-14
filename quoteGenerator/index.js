@@ -60,8 +60,9 @@ newQuote.addEventListener("click", changeQuote);
 
 function changeQuote() {
   if (counter < 10) {
-    quote.textContent = quotes[counter].quote;
-    person.textContent = quotes[counter].person;
+    let a = quote.textContent = quotes[counter].quote;
+    let b = person.innerHTML = quotes[counter].person;
+    console.log(b);
     counter++;
   } else {
     counter = 0;
