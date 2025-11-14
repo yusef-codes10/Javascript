@@ -54,3 +54,10 @@ const quotes = [
 
 
 newQuote.addEventListener('click', () => console.log('btn has been clicked'));
+newQuote.addEventListener('click', changeQuote);
+
+function changeQuote() {
+    let counter = 0;
+    quote.textContent = quotes[counter].quote;
+    counter++;
+}
