@@ -96,3 +96,15 @@ body {
     height: 100%;
     z-index: 1; */
 }
+
+/* animation key frame */
+@keyframes drop{
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
