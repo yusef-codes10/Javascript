@@ -40,7 +40,12 @@ body {
     content: '+';
     position: absolute;
     right: -5px;
+    cursor: pointer;
 }
 .answer {
     display: block;
+    padding-top: 1rem;
+    line-height: 1.5;
+
+    transition: 2s;
 }
