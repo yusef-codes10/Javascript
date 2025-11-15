@@ -72,6 +72,7 @@ body {
     /*! create an animation */
     animation-name: drop;
     animation-duration: 1s;
+    /* background-color: rgba(0, 0, 0, 0.3); */
 }
 
 
@@ -108,3 +109,6 @@ body {
         opacity: 1;
     }
 }
+
+
+/* ! must have a model container for it to work */
