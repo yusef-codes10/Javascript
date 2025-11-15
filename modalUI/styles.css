@@ -39,12 +39,23 @@ body {
 
 .pop-up {
     background-color: #fff;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5rem;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
+    width: 200px;
+    height: 100px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
     
-    transition: all 5s;
+    transform: translate(-50%, -50%);
 
 }
 
