@@ -63,6 +63,16 @@ body {
 
 }
 
+.close-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 2s;
+}
+.close-btn:hover {
+    color: #ff0000;
+
+}
+
 .hidden {
     display: none;
     position: fixed;
