@@ -11,14 +11,13 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
+    position: relative;
 }
 
 .open-btn {
-    margin: 0 100px;
+    position: absolute;
+    top: 60%;
+    left: 20%;
 }
 
 .open-btn button {
