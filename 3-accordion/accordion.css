@@ -49,3 +49,8 @@ body {
 
     transition: 2s;
 }
+
+/* active class */
+.active {
+    display: none;
+}
