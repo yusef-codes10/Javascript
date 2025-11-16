@@ -43,21 +43,17 @@ body {
     cursor: pointer;
 }
 
-.answer {
-
-    /* display: none; */
-    /* using the height and the overflow is better for accoridion */
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease;
-}
-
 /* active class */
 
-.content-container.active .answer {
-    max-height: 200px; /* something large enough */
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
 }
 
+.content-container.active .answer {
+    max-height: 200px;
+}
 
 /* !key lessons */
 /* new css selector .content-container.active .answer */

@@ -4,16 +4,12 @@
 // for loop
 // this
 // classlist.toggle()
-const accordion = document.getElementsByClassName('content-container');
-// we can't access a psuedo class element cuz it's not in the dom
+const questions = document.getElementsByClassName('question');
 
-// ! we wanna access all classes with a for loop 
-for (let i = 0; i < accordion.length; i++) {
-    accordion[i].addEventListener('click', function() {
-        console.log('clicked');
-        // using the 'this' 
-        // ! can't use 'this' with arrow functions
-        this.classList.toggle('active');
+for (let i = 0; i < questions.length; i++) {
+    questions[i].addEventListener('click', function() {
+        // ! can't use this with arrow functions
+        const content = this.nextElementSibling;  // the content-container
+        content.classList.toggle('active');
     });
-    
 }
