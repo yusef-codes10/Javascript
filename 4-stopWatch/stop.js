@@ -8,8 +8,8 @@
 // innerHTML
 
 // buttons
-const stopBtn = document.querySelector("#startStopBtn");
-const resetBtn = document.querySelector("#reset");
+const startStopBtn = document.querySelector("#startStopBtn");
+const resetBtn = document.querySelector("#resetBtn");
 
 // time values
 let seconds = 0;
@@ -20,6 +20,10 @@ let hours = 0;
 let leadingSeconds = 0;
 let leadingMinutes = 0;
 let leadingHours = 0;
+
+// interval and timer status
+let timerInterval = null;
+let timerStatus = "stopped";
 
 // stop watch function
 function stopWatch() {
@@ -41,20 +45,28 @@ function stopWatch() {
   minutes < 10
     ? (leadingMinutes = "0" + minutes.toString())
     : (leadingMinutes = minutes);
-    
-  hours < 10
-    ? (leadingHours = "0" + hours.toString()) 
-    : (leadingHours = hours);
+
+  hours < 10 ? (leadingHours = "0" + hours.toString()) : (leadingHours = hours);
 
   let displayTimer = (document.getElementById("timer").innerText =
     leadingHours + ":" + leadingMinutes + ":" + leadingSeconds);
 }
 
-const playInterval = window.setInterval(stopWatch, 1000);
+// const playInterval = window.setInterval(stopWatch, 1000);
 
-function setTimeOut() {
-  clearInterval(playInterval);
-  console.log("stopped");
-}
+// we wanna have control over when the stop watch starts
+startStopBtn.addEventListener("click", function () {
+  if (timerStatus === "stopped") {
+    timerInterval = window.setInterval(stopWatch, 1000);
+    document.getElementById("startStopBtn").innerHTML =
+      '<i class="fa-solid fa-pause" id="reset"></i>';
 
-resetBtn.addEventListener("click", setTimeOut);
+    timerStatus = "started";
+  } else {
+    window.clearInterval(timerInterval);
+    document.getElementById("startStopBtn").innerHTML =
+      '<i class="fa-solid fa-play" id="play"></i>';
+    timerStatus = "stopped";
+    
+  }
+});
