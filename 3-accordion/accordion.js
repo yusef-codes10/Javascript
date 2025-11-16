@@ -13,3 +13,6 @@ for (let i = 0; i < questions.length; i++) {
         content.classList.toggle('active');
     });
 }
+
+
+// todo I have to repeat this cuz it makes no sense !
