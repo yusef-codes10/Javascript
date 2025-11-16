@@ -9,7 +9,7 @@
 
 // buttons
 const stopBtn = document.querySelector('#startStopBtn');
-const resetBtn = document.querySelector('#resetBtn');
+const resetBtn = document.querySelector('#reset');
 
 // time values
 let seconds = 0;
@@ -35,4 +35,11 @@ function stopWatch() {
     
 }
 
-window.setInterval(stopWatch, 1000);
+const playInterval = window.setInterval(stopWatch, 1000);
+
+function setTimeOut() {
+    clearInterval(playInterval);
+    console.log('stopped');
+}
+
+resetBtn.addEventListener('click', setTimeOut);
