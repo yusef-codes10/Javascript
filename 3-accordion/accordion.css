@@ -42,9 +42,11 @@ body {
     right: -5px;
     cursor: pointer;
 }
+
 .answer {
     display: block;
     padding-top: 1rem;
+    height: auto;
     line-height: 1.5;
 
     transition: 2s;
@@ -52,5 +54,9 @@ body {
 
 /* active class */
 .active {
-    display: none;
+    /* display: none; */
+    /* using the height and the overflow is better for accoridion */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
 }

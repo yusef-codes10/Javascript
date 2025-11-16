@@ -5,6 +5,7 @@
 // this
 // classlist.toggle()
 const accordion = document.getElementsByClassName('content-container');
+// we can't access a psuedo class element cuz it's not in the dom
 
 // ! we wanna access all classes with a for loop 
 for (let i = 0; i < accordion.length; i++) {
