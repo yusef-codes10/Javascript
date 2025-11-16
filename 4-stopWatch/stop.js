@@ -7,18 +7,11 @@
 // setInterval()
 // innerHTML
 
-const playBtn = document.getElementById('play');
-const timerContent = document.getElementById('timer');
+// buttons
+const stopBtn = document.querySelector('#startStopBtn');
+const resetBtn = document.querySelector('#resetBtn');
 
-playBtn.addEventListener('click', () => console.log('clicked'));
-
-function play() {
-    let counter = 0;
-    while (true) {
-        timerContent.textContent = counter;
-        if (counter === 10) {
-            return;
-        }
-        counter++;
-    }
-}
+// time values
+let seconds = 0;
+let minutes = 0;
+let hours = 0;
