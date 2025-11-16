@@ -34,3 +34,5 @@ function stopWatch() {
     = hours + ':' + minutes + ':' + seconds;
     
 }
+
+window.setInterval(stopWatch, 1000);
