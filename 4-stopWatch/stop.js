@@ -34,21 +34,17 @@ function stopWatch() {
     }
   }
   // include leading zeros
-  if (seconds < 10) {
-    leadingSeconds = "0" + seconds.toString();
-  } else {
-    leadingSeconds = seconds;
-  }
-  if (minutes < 10) {
-    leadingMinutes = "0" + minutes.toString();
-  } else {
-    leadingMinutes = minutes;
-  }
-  if (hours < 10) {
-    leadingHours = "0" + hours.toString();
-  } else {
-    leadingHours = hours;
-  }
+  seconds < 10
+    ? (leadingSeconds = "0" + seconds.toString())
+    : (leadingSeconds = seconds);
+
+  minutes < 10
+    ? (leadingMinutes = "0" + minutes.toString())
+    : (leadingMinutes = minutes);
+    
+  hours < 10
+    ? (leadingHours = "0" + hours.toString()) 
+    : (leadingHours = hours);
 
   let displayTimer = (document.getElementById("timer").innerText =
     leadingHours + ":" + leadingMinutes + ":" + leadingSeconds);
