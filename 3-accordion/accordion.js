@@ -12,6 +12,7 @@ for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener('click', function() {
         console.log('clicked');
         // using the 'this' 
+        // ! can't use 'this' with arrow functions
         this.classList.toggle('active');
     });
     

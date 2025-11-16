@@ -44,19 +44,25 @@ body {
 }
 
 .answer {
-    display: block;
-    padding-top: 1rem;
-    height: auto;
-    line-height: 1.5;
 
-    transition: 2s;
-}
-
-/* active class */
-.active {
     /* display: none; */
     /* using the height and the overflow is better for accoridion */
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease;
 }
+
+/* active class */
+
+.content-container.active .answer {
+    max-height: 200px; /* something large enough */
+}
+
+
+/* !key lessons */
+/* new css selector .content-container.active .answer */
+/* 
+You want the answer to open/close — NOT the whole container.
+
+But you toggle the class on the container because it's what you click.
+*/
