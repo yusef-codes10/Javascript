@@ -55,7 +55,7 @@ function stopWatch() {
 // const playInterval = window.setInterval(stopWatch, 1000);
 
 // we wanna have control over when the stop watch starts
-startStopBtn.addEventListener("click", function () {
+startStopBtn.addEventListener("click",() => {
   if (timerStatus === "stopped") {
     timerInterval = window.setInterval(stopWatch, 10);
     document.getElementById("startStopBtn").innerHTML =
@@ -70,7 +70,7 @@ startStopBtn.addEventListener("click", function () {
   }
 });
 
-resetBtn.addEventListener("click", function () {
+resetBtn.addEventListener("click",() => {
   window.clearInterval(timerInterval);
   seconds = 0;
   minutes = 0;
