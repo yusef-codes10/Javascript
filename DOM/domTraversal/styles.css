@@ -1,0 +1,36 @@
+/* styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grand-parent {
+    background-color: #c0392b; /* red */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.parent  {
+    background-color: #27ae60; /* green */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.child {
+    background-color: #2980b9; /* blue */
+    width: 100px;
+    height: 60px;
+    border: 2px solid black;
+    margin: 0 8px;
+}
