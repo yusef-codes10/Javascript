@@ -1,4 +1,10 @@
 // logic
 // by id
 const grandParent = document.getElementById('grandParent');
-grandParent.style.backgroundColor = 'white';
+
+
+function changeColor(element, color) {
+    element.style.backgroundColor = color;
+}
+
+changeColor(grandParent, '#333111');
