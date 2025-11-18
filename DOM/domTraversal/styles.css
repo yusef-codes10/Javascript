@@ -18,6 +18,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border: 2px solid black;
+
 }
 
 .parent  {
@@ -25,6 +27,8 @@ body {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    border: 2px solid black;
+
 }
 
 .child {
