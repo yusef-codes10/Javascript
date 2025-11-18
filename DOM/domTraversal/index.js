@@ -11,6 +11,6 @@ changeColor(grandParent);
 
 
 // by className
-const parents = document.getElementsByClassName('parent');
+const parents = Array.from(document.getElementsByClassName('parent'));
 // using foreach
-parents.foreach(changeColor);
+parents.forEach(changeColor);
