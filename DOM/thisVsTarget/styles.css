@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style-type: none;
+
 }
 
 body {
@@ -26,4 +28,16 @@ button {
     font-size: 2rem;
     background-color: #c11717;
     color: #fff;
+}
+
+/* a class for done */
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.to-do-list {
+    background-color: aqua;
+    padding: 12px 16px;
+    font-size: 2rem;
 }
