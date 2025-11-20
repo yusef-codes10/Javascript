@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: seagreen;
+}
+
+button {
+    padding: 12px 16px;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #c11717;
+    color: #fff;
+}
