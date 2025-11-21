@@ -76,3 +76,9 @@ button {
 .window2 {background-color: fuchsia;}
 .window3 {background-color: magenta;}
 .window4 {background-color: mediumspringgreen;}
+
+.dialog {
+    background-color: aquamarine;
+    font-size: 3rem;
+    
+}
