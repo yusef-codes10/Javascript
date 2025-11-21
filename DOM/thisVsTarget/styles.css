@@ -44,6 +44,7 @@ button {
 
 .hidden {
     display: none;
+    transition: 2s ease-in;
 }
 
 .container {
@@ -70,3 +71,8 @@ button {
     top: 0;
     left: 0;
 }
+
+.window1 {background-color: aqua;}
+.window2 {background-color: fuchsia;}
+.window3 {background-color: magenta;}
+.window4 {background-color: mediumspringgreen;}
