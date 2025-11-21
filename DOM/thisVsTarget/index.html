@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="/DOM/thisVsTarget/styles.css" />
     <title>this Vs target</title>
-    <script src="/DOM/thisVsTarget/eventDelegation.js" defer></script>
+    <script src="/DOM/thisVsTarget/dialog.js" defer></script>
   </head>
   <body>
     <!-- ! 1- testing this vs e.target -->
@@ -32,7 +32,7 @@
          </div> -->
 
     <!-- !3- widnows with closing functionality -->
-    <div class="container">
+    <!-- <div class="container">
       <div class="window window1">
         <i class="fa-solid fa-xmark"></i>
       </div>
@@ -45,10 +45,17 @@
       <div class="window window4">
         <i class="fa-solid fa-xmark"></i>
       </div>
-    </div>
+    </div> -->
 
+    <!-- ! 4th example -->
+    <nav>
+      <h2 class="logo"></h2>
+      <button id="clickBtn">click</button>
+    </nav>
     <dialog id="dialog">
       <div class="cards">
+        <i class="fa-solid fa-xmark" id="closeDialog"></i>
+
         <div class="card">A</div>
         <div class="card">B</div>
         <div class="card">C</div>

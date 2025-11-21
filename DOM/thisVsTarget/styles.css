@@ -12,6 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .box {
@@ -72,13 +73,47 @@ button {
     left: 0;
 }
 
-.window1 {background-color: aqua;}
-.window2 {background-color: fuchsia;}
-.window3 {background-color: magenta;}
-.window4 {background-color: mediumspringgreen;}
+.window1 {
+    background-color: aqua;
+}
+
+.window2 {
+    background-color: fuchsia;
+}
+
+.window3 {
+    background-color: magenta;
+}
+
+.window4 {
+    background-color: mediumspringgreen;
+}
 
 .dialog {
     background-color: aquamarine;
     font-size: 3rem;
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.cards {
+    margin: 0 auto;
+    padding: 12px 16px;
+    width: 700px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.card {
+    padding: 1rem;
 }
