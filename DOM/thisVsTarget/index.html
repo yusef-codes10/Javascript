@@ -3,23 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/DOM/thisVsTarget/styles.css" />
     <title>this Vs target</title>
-    <script src="/DOM/thisVsTarget/script.js" defer></script>
+    <script src="/DOM/thisVsTarget/3rd.js" defer></script>
   </head>
   <body>
+    <!-- ! 1- testing this vs e.target -->
     <!-- <div class="box" id="box">
         <button id="btn">click me please</button></div> -->
-        <!-- a list with multiple items -->
-         <!-- event delegtion -->
+    <!-- a list with multiple items -->
+    <!-- event delegtion -->
 
-         <div class="to-do-list">
+    <!-- ! 2- to do list with event delegation e.target -->
+    <!-- <div class="to-do-list">
             <ul id="list">
                 <li>Go to gym</li>
                 <li>build a calculator</li>
                 <li>clean your room</li>
                 <li>get groceries</li>
             </ul>
-         </div>
+         </div> -->
+
+    <!-- !3- widnows with closing functionality -->
+    <div class="container">
+      <div class="window window1">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="window window2">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="window window3">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="window window4">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
   </body>
 </html>

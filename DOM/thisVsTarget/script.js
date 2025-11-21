@@ -7,11 +7,14 @@
 //     console.log(e.target);  // the button itself
 // })
 
-const list = document.querySelector("#list");
-list.addEventListener("click", function (e) {
-  if (e.target.tagName === "LI") {
-    e.target.classList.toggle("done");
-  }
-  console.log(e.target);
-  console.log(this);
-});
+
+// ! 2nd js
+// const list = document.querySelector("#list");
+// list.addEventListener("click", function (e) {
+//   if (e.target.tagName === "LI") {
+//     e.target.classList.toggle("done");
+//   }
+//   console.log(e.target);
+//   console.log(this);
+// });
+

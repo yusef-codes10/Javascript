@@ -41,3 +41,32 @@ button {
     padding: 12px 16px;
     font-size: 2rem;
 }
+
+.hidden {
+    display: none;
+}
+
+.container {
+    background-color: #c28d48;
+    padding: 12px 16px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    height: auto;
+}
+
+.window {
+    padding: 12px 16px;
+    background-color: #c11717;
+    position: relative;
+    width: 20%;
+    height: 200px;
+}
+
+.window i {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
