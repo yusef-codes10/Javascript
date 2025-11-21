@@ -108,7 +108,7 @@ button {
     align-items: center;
 }
 
-.cards i {
+.cards .close-dialog {
     position: absolute;
     top: 0;
     right: 0;
@@ -116,4 +116,12 @@ button {
 }
 .card {
     padding: 1rem;
+    border: 2px solid red;
+    position: relative;
+}
+
+.close-card {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
